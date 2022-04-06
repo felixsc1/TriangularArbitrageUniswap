@@ -8,10 +8,13 @@ This is the implementation for DeFi. Uniswap V3 uses graphQL to query pool data 
 ## Features
 
 1. Python part:
-- post graphQL query using python requests.
-- Group all available uniswap pools into triangular arbitrage tradeable groups.
-- Calculate the surface rate arbitrage opportunities (not yet considering slippage).
-- Export data to json to continue in javascript.
+   - post graphQL query using python requests.
+   - Group all available uniswap pools into triangular arbitrage tradeable groups.
+   - Calculate the surface rate arbitrage opportunities (not yet considering slippage, fees, gas, etc.).
+   - Export data to json to continue in javascript.
 
 2. Javascript part (because uniswap SDK is built in JS):
-to be continued...
+   - For each pair in an arbitrage group, get the individual token information from the blockchain (via ethers.js and infura)
+   - Get the exact quotes for the three trades and calculate the real arbitrage rate (depth, including price impact)
+
+    to be continued...

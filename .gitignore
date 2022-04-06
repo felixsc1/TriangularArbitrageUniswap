@@ -2,6 +2,12 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
+## Javascript ##
+node_modules/
+package-lock.json
+
+
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
